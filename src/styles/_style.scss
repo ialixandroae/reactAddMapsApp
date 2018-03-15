@@ -1,0 +1,67 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+// Elements style
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Raleway;
+    color: #34495e;
+}
+
+//Class style
+.navbar.navbar-default{
+    background-image: linear-gradient(to right, #fffde4, #fff);
+}
+
+.navbar-brand{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.header__noLocations {
+   font-size: 2.1rem;
+}
+
+.header__noLocations:hover{
+    cursor: default;
+}
+
+
+//ID style
+#header__reset {
+    margin-left: 2rem;
+}
+
+#header__logo {
+    margin-left: 2rem;
+}
+
+#header__github:hover {
+    color: black;
+}
+
+#header__twitter:hover{
+    color: #00aced;
+}
+
+
+
+#noOfLocations {
+    position:relative;
+    bottom: 0.5rem;
+    font-size: 1.7rem;
+    color: #34495e;
+}
+
+#noOfLocations:hover{
+    cursor: default;
+}
+
+#typeSelector{
+    position:relative;
+    top: 1.5rem;
+    font-size: 1.7rem;
+}
