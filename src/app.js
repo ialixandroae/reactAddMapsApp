@@ -39,7 +39,7 @@ class App extends Component {
     }
 
     handleResetApp() {
-        this.setState(() => ({maps: ['Bucharest']}));
+        this.setState(() => ({maps: ['Bucharest'], locationsCount: 1}));
     }
 
     render() {
