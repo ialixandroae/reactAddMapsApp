@@ -2,7 +2,7 @@
 
 Sample React-ArcGIS web app that allows the user to add multiple instances of map of different locations in the world, both in 2D or 3D
 
-![reactapp](https://user-images.githubusercontent.com/18401030/37493737-a81202fa-28ae-11e8-8a65-c2dc12782211.png)
+![reactapp](https://user-images.githubusercontent.com/18401030/37506987-2d5a8f86-28f5-11e8-9702-9d3c0da59754.png)
 
 ![Alt Text](https://media.giphy.com/media/9MIJu84w8KfxypDyXm/giphy.gif)
 
