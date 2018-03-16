@@ -18,6 +18,12 @@ $ npm install
 
 ### Running
 
+Build and run dev-server 
+
+```
+$ npm run dev-server
+```
+
 Build and run live server
 
 ```
