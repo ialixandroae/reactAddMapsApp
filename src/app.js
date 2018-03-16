@@ -26,8 +26,8 @@ class App extends Component {
         this.setState((prevState) => ({ maps : prevState.maps.concat(locatie)}));
     }
 
-    handleAddLocationCount() {
-        this.setState((prevState) => ({ locationsCount: prevState.locationsCount + 1}));
+    handleAddLocationCount(value) {
+        this.setState((prevState) => ({ locationsCount: prevState.locationsCount + value}));
     }
 
     handleSetInitialCount(number){
@@ -84,7 +84,7 @@ class Header extends Component {
         e.preventDefault();
         const locatie = e.target.elements.map.value.trim();
         this.props.handleAddMap(locatie);
-        this.props.handleAddLocationCount();
+        this.props.handleAddLocationCount(1);
         e.target.elements.map.value = "";
     }
 
@@ -92,7 +92,7 @@ class Header extends Component {
         e.preventDefault();
         
         let noOfLocations = parseInt(document.getElementById('noOfLocations').innerText.split(' ')[1]);
-
+        this.props.handleAddLocationCount(5);
         esriPromise(["esri/tasks/Locator", "esri/geometry/Point", "esri/geometry/SpatialReference"]).then(([Locator, Point, SpatialReference]) => {
             
             const locatorTask = new Locator({
@@ -121,7 +121,7 @@ class Header extends Component {
                         this.props.handleAddMap(randomCityName);
                     });
             }
-        })    
+        });
     }
 
     resetApp() {
@@ -176,12 +176,12 @@ class Header extends Component {
                             </span>
                             <Nav pullRight>
                                 <NavItem href="https://github.com/ialixandroae" id="header__github" target="_blank">
-                                    <i class="fa fa-github" aria-hidden="true"></i>GitHub
+                                    <i className="fa fa-github" aria-hidden="true"></i>GitHub
                                 </NavItem>
                             </Nav>
                             <Nav pullRight>
                                 <NavItem href="https://twitter.com/ialixandroae" id="header__twitter" target="_blank">
-                                    <i class="fa fa-twitter"  aria-hidden="true"></i>Twitter
+                                    <i className="fa fa-twitter"  aria-hidden="true"></i>Twitter
                                 </NavItem>
                             </Nav>
                         </form>
